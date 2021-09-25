@@ -49,7 +49,7 @@ public class ApplicationConfiguration {
         return new Queue("trip-result");
     }
 
-    @Bean
+  /*  @Bean
     public DataSource getDataSource() {
         DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
         dataSourceBuilder.driverClassName("org.postgresql.Driver");
@@ -57,7 +57,7 @@ public class ApplicationConfiguration {
         dataSourceBuilder.username("postgres");
         dataSourceBuilder.password("postgres");
         return dataSourceBuilder.build();
-    }
+    }*/
 
     @Bean
     public SpringLiquibase liquibase() {
